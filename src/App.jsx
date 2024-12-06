@@ -28,14 +28,14 @@ function App() {
    }, []);
   return (
     // <WatchReviewApp/>
-        <BrowserRouter>
-      //  <Routes>
-      //   <Route path='/' element={<Home/>}></Route>
-      //   <Route path='/feature' element={<Feature/>}></Route>
-      //   <Route path='/about' element={<About/>}></Route>
+        <HostRouter>
+        <Routes>
+        <Route path='/' element={<Home/>}></Route>
+         <Route path='/feature' element={<Feature/>}></Route>
+         <Route path='/about' element={<About/>}></Route>
 
-      //  </Routes>
-       </BrowserRouter>
+        </Routes>
+       </HostRouter>
   );
 }
 
