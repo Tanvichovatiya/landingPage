@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import Navbar from './component/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './component/Home';
 import Feature from './component/feature';
 import About from './component/About';
 import ScrollReveal from 'scrollreveal';
 import WatchReviewApp from './component/review';
+
 function App() {
   useEffect(() => {
     ScrollReveal({
@@ -28,14 +29,14 @@ function App() {
    }, []);
   return (
     // <WatchReviewApp/>
-        <HostRouter>
+        <HashRouter>
         <Routes>
         <Route path='/' element={<Home/>}></Route>
          <Route path='/feature' element={<Feature/>}></Route>
          <Route path='/about' element={<About/>}></Route>
 
         </Routes>
-       </HostRouter>
+       </HashRouter>
   );
 }
 
